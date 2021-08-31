@@ -1,6 +1,29 @@
 {
-  // Note: This config is only used to help editors like VS Code understand/resolve
-  // parts, the actual transpilation is done by babel. Any compiler configuration in
-  // here will be ignored.
-  "include": ["./node_modules/@sanity/base/types/**/*.ts", "./**/*.ts", "./**/*.tsx"]
+	"compilerOptions": {
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"jsx": "react",
+		"lib": ["es6"],
+		"moduleResolution": "node",
+		"noEmit": true,
+		"strict": true,
+		"target": "esnext",
+		"noImplicitAny": false
+	},
+	"exclude": [
+		"node_modules",
+		"babel.config.js",
+		"metro.config.js",
+		"jest.config.js"
+	],
+	// Note: This config is only used to help editors like VS Code understand/resolve
+	// parts, the actual transpilation is done by babel. Any compiler configuration in
+	// here will be ignored.
+	"include": [
+		"./node_modules/@sanity/base/types/**/*.ts",
+		"./**/*.ts",
+		"./**/*.tsx"
+	]
 }
